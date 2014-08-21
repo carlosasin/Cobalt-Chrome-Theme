@@ -1,0 +1,199 @@
+/*
+  
+  Cobalt theme by Carlos Asin
+
+  ************************************
+
+  A cobalt theme for Chrome Developer Tools inspired by Sublime Text 2 cobalt theme. 
+
+  Modifies the source code and other smaller tweaks.
+
+  Tested on PC and Mac.
+
+  Have plans to convert the other panes at some point. Let me know if you find issues with it
+
+  Installation:
+
+  Simply override Custom.css in the User Stylesheets directory:
+
+  Mac: ~/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custom.css
+
+  Mac (Canary): 
+    ~/Library/Application Support/Google/Chrome Canary/Default/User StyleSheets/Custom.css
+
+  PC: C:\Users\YourUsername\AppData\Local\Google\Chrome\UserData\Default\User StyleSheets\Custom.css
+
+  PC (Canary): 
+    C:\Users\YourUsername\AppData\Local\Google\Chrome SxS\UserData\Default\User StyleSheets\Custom.css
+
+  Ubuntu (Chromium): ~/.config/chromium/Default/User StyleSheets/Custom.css
+
+  Screenshoot:
+
+  https://googledrive.com/host/0BwzDh0DsxCXlS3g5TF9kS1BDWHM/chrome-cobalt-theme/cobalt-theme.png
+
+*/
+
+/**********************************************/
+/* View Source
+/**********************************************/
+
+.webkit-line-number {
+  background: #3A312C !important;
+}
+
+.webkit-line-content {
+  background: #002240 !important;
+  color: #BDAE9D !important;
+}
+
+/**********************************************/
+/* Elements
+/**********************************************/
+
+  /**********************************************/
+  /* Layout
+  /**********************************************/
+
+  #storage-views .script-view,
+  #network-views .script-view,
+  #script-resource-views .script-view {
+    color: #BDAE9D !important;
+  }
+  
+  #storage-views .script-view,
+  #elements-content,
+  #network-views .text-editor-contents,
+  #script-resource-views .script-view {
+    background: #002240 !important;
+    font-size: 12px !important;
+  }
+  
+  #elements-content .highlight { 
+    color: #f1f1f1;
+  }
+  
+  #elements-content li.hovered:not(.selected) .selection {
+    background: rgba(255, 255, 255, .2) !important;
+  }
+
+  #elements-content .selection.selected {
+    z-index: 0 !important;
+  }
+
+  #elements-content ol:focus li.selected .selection {
+    background: #4A412C !important;
+  }
+
+  #elements-content .selected .highlight {
+    position: relative;
+    z-index: 2;
+  }
+  
+  #elements-content .selected {
+    background-color: #4c4d5d !important;
+  }
+  
+  #elements-content .editing {
+    background-color: #242424 !important;
+  }
+  
+  #elements-content .parent::before {
+    content: url(chrome-devtools://devtools/Images/treeRightTriangleWhite.png) !important;
+  }
+  
+  #elements-content .parent.expanded::before {
+    content: url(chrome-devtools://devtools/Images/treeDownTriangleWhite.png) !important;
+  }
+  
+  /**********************************************/
+  /* HTML
+  /**********************************************/
+
+  .webkit-html-comment{
+    font-style: italic; color: #007fef !important;
+  }
+
+  .webkit-html-tag {
+    color: #8ae4e7 !important;
+  }
+  
+  .webkit-html-attribute-name {
+    color: #8ae4e7 !important;
+  }
+
+  .webkit-html-attribute-value {
+    color: #39d700 !important;
+  }
+  
+  /**********************************************/
+  /* CSS
+  /**********************************************/
+  
+  .styles-section {
+    background: #002240 !important;
+    color: white;
+  }
+
+  .webkit-css-comment {
+    font-style: italic; color: #007fef !important;
+  }
+
+  .webkit-css-selector, .styles-selector,
+  .styles-section .selector-matches {
+    color: #59d95f !important;
+  }
+
+  .styles-section .selector {
+    color: #8ce5e9 !important;
+  }
+
+  .webkit-css-property {
+    color: #9bf09d !important;
+  }
+
+  .webkit-css-keyword {
+    color: #edf080 !important;
+  }
+
+  .webkit-css-number,
+  .properties-tree .value {
+    color: #eaed7f !important;
+  }
+
+  .webkit-css-important,
+  .webkit-css-at-rule {
+    color: white !important;
+  }
+
+  .webkit-css-string {
+    color: #3ad900 !important;
+  }
+
+  /**********************************************/
+  /* JavaScript
+  /**********************************************/
+  
+  .webkit-javascript-ident {
+    color: #e28f07 !important;
+  }
+
+  .webkit-javascript-keyword {
+    color: #edf080 !important;
+  }
+  
+  .webkit-javascript-comment {
+    font-style: italic; color: #007fef !important;
+  }
+  
+  .webkit-javascript-string {
+    color:#31bd09 !important;
+  }
+  
+  .webkit-javascript-number {
+    color: #e59097 !important;
+  }
+  
+  .webkit-javascript-regexp {
+    color: white !important;
+  }
